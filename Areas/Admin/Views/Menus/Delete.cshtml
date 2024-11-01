@@ -1,0 +1,95 @@
+﻿@model WebApplication1.Models.TbMenu
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_layoutAdmin.cshtml";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>Xóa Menu</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">General Form</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- left column -->
+                <div class="col-md-12">
+                    <!-- general form elements -->
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h3 class="card-title">Xóa Menu</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <!-- form start -->
+                        <form asp-action="Delete">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label asp-for="Title">Tiêu đề: </label>
+                                    @Model?.Title
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="Alias">Alias:</label>
+                                    @Model?.Alias
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="Description">Mô Tả: </label>
+                                   @Model?.Description
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="Levels">Mức:</label>
+                                    @Model?.Levels
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="ParentId">Menu Cha:</label>
+                                   @Model?.ParentId
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="Position">Vị Trí:</label>
+                                    @Model?.Position
+                                </div>
+
+                                <div class="form-group form-check">
+                                    <label asp-for="IsActive">Hiện:</label>
+                                    @Model?.IsActive
+                                </div>
+
+                                <div class="d-flex mt-3">
+                                    <div class="form-group mr-2">
+                                        <button type="submit" class="btn btn-primary rounded">Xóa</button>
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <a type="type" class="btn btn-danger rounded mr-3" asp-action="Index">Quay Lại</a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

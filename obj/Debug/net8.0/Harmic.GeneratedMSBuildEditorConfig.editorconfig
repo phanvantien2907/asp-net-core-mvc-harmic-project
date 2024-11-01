@@ -1,0 +1,79 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Harmic
+build_property.RootNamespace = Harmic
+build_property.ProjectDir = C:\Users\PHAN VAN TIEN\Desktop\Học Tập\Năm 3\Kỳ 1\Phát triển ứng dụng Web\Bai Tap\Bai Tap Ca Nhan\Harmic\Harmic\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\PHAN VAN TIEN\Desktop\Học Tập\Năm 3\Kỳ 1\Phát triển ứng dụng Web\Bai Tap\Bai Tap Ca Nhan\Harmic\Harmic
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/Harmic/Harmic/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/Harmic/Harmic/Areas/Admin/Views/Shared/Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEZvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/Harmic/Harmic/Areas/Admin/Views/Shared/Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXE5hdmJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/Harmic/Harmic/Areas/Admin/Views/Shared/Sidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXFNpZGViYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/Harmic/Harmic/Areas/Admin/Views/Shared/_layoutAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9sYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/Harmic/Harmic/Views/Blog/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/Harmic/Harmic/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/Harmic/Harmic/Views/Product/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/Harmic/Harmic/Views/Shared/Components/Blog/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQmxvZ1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/Harmic/Harmic/Views/Shared/Components/MenuTop/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudVRvcFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/Harmic/Harmic/Views/Shared/Components/Product/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUHJvZHVjdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/Harmic/Harmic/Views/Shared/Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEZvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/Harmic/Harmic/Views/Shared/Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEhlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/Harmic/Harmic/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/Harmic/Harmic/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-utb5svo94j

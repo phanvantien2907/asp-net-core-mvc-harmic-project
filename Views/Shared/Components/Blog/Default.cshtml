@@ -1,0 +1,37 @@
+﻿@model IEnumerable<WebApplication1.Models.TbBlog>
+
+@foreach(var item in Model)
+{
+    string sUrl = $"/blog/{item.Alias}-{item.BlogId}.html";
+<div class="swiper-slide">
+    <div class="blog-item">
+        <div class="blog-img img-zoom-effect">
+            <a href="@sUrl">
+                <img class="img-full" src="@item.Image" alt="Blog Image">
+            </a>
+        </div>
+        <div class="blog-content">
+            <div class="blog-meta text-dim-gray pb-3">
+                <ul>
+                    <li class="date"><i class="fa fa-calendar-o me-2"></i>@item.CreatedDate</li>
+                    <li>
+                        <span class="comments me-3 ms-3">
+                            <a href="javascript:void(0)">@item.SeoTitle</a>
+                        </span>
+                        <span class="link-share ms-3">
+                            <a href="javascript:void(0)">@item.SeoDescription</a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <h5 class="title mb-4">
+                <a href="@sUrl">@item.Title</a>
+            </h5>
+            <p class="short-desc mb-5">@item.Description</p>
+            <div class="button-wrap">
+                <a class="btn btn-custom-size btn-dark btn-lg rounded-0" href="blog-detail-left-sidebar.html">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+}
