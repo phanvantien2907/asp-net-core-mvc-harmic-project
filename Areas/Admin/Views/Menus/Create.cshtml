@@ -1,0 +1,101 @@
+﻿@model WebApplication1.Models.TbMenu
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_layoutAdmin.cshtml";
+}
+
+ <!-- Content Wrapper. Contains page content -->
+ <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Thêm Menu</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">General Form</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- left column -->
+          <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Thêm Menu</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form asp-action="Create">
+                <div class="card-body">
+                  <div class="form-group">
+                    <label asp-for="Title">Tiêu đề</label>
+                     <input asp-for="Title" class="form-control">
+                     <span asp-validation-for="Title" class="text-danger"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label asp-for="Alias">Alias</label>
+                     <input asp-for="Alias" class="form-control">
+                     <span asp-validation-for="Alias" class="text-danger"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label asp-for="Description">Mô Tả</label>
+                     <input asp-for="Description" class="form-control">
+                     <span asp-validation-for="Description" class="text-danger"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label asp-for="Levels">Mức</label>
+                     <input asp-for="Levels" class="form-control">
+                     <span asp-validation-for="Levels" class="text-danger"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label asp-for="ParentId">Menu Cha</label>
+                     <input asp-for="ParentId" class="form-control">
+                     <span asp-validation-for="ParentId" class="text-danger"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label asp-for="Position">Vị Trí</label>
+                     <input asp-for="Position" class="form-control">
+                     <span asp-validation-for="Position" class="text-danger"></span>
+                  </div>
+
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" asp-for="IsActive" />
+                    <label class="form-check-label" asp-for="IsActive">Hiển Thị</label>
+                  </div>
+
+                  <div class="d-flex mt-3">
+                      <div class="form-group mr-2">
+                    <button type="button" class="btn btn-primary rounded">Thêm mới</button>
+
+                  </div>
+
+                  <div class="form-group">
+                    <button type="button" class="btn btn-danger rounded mr-3" asp-action="Index">Quay Lại</button>
+                  </div>
+
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>

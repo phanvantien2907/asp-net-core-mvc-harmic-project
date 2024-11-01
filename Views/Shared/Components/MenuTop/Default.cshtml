@@ -1,0 +1,9 @@
+﻿
+@model IEnumerable<WebApplication1.Models.TbMenu>
+
+@foreach(var item in Model)
+{
+   <li class="drop-holder">
+       <a href="/@item.Alias">@item.Title</a>
+   </li>
+}
