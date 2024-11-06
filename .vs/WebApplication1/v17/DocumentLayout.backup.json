@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|c:\\users\\phan van tien\\desktop\\h\u1ECDc t\u1EADp\\n\u0103m 3\\k\u1EF3 1\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng web\\bai tap\\bai tap ca nhan\\webapplication1\\areas\\admin\\views\\menus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|solutionrelative:areas\\admin\\views\\menus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|c:\\users\\phan van tien\\desktop\\h\u1ECDc t\u1EADp\\n\u0103m 3\\k\u1EF3 1\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng web\\bai tap\\bai tap ca nhan\\webapplication1\\areas\\admin\\views\\tbproducts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|solutionrelative:areas\\admin\\views\\tbproducts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|c:\\users\\phan van tien\\desktop\\h\u1ECDc t\u1EADp\\n\u0103m 3\\k\u1EF3 1\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng web\\bai tap\\bai tap ca nhan\\webapplication1\\areas\\admin\\views\\menus\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|solutionrelative:areas\\admin\\views\\menus\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|c:\\users\\phan van tien\\desktop\\h\u1ECDc t\u1EADp\\n\u0103m 3\\k\u1EF3 1\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng web\\bai tap\\bai tap ca nhan\\webapplication1\\models\\tbproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|solutionrelative:models\\tbproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|c:\\users\\phan van tien\\desktop\\h\u1ECDc t\u1EADp\\n\u0103m 3\\k\u1EF3 1\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng web\\bai tap\\bai tap ca nhan\\webapplication1\\areas\\admin\\controllers\\menuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|solutionrelative:areas\\admin\\controllers\\menuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|c:\\users\\phan van tien\\desktop\\h\u1ECDc t\u1EADp\\n\u0103m 3\\k\u1EF3 1\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng web\\bai tap\\bai tap ca nhan\\webapplication1\\areas\\admin\\controllers\\tbproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|solutionrelative:areas\\admin\\controllers\\tbproductscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|c:\\users\\phan van tien\\desktop\\h\u1ECDc t\u1EADp\\n\u0103m 3\\k\u1EF3 1\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng web\\bai tap\\bai tap ca nhan\\webapplication1\\areas\\admin\\views\\menus\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|solutionrelative:areas\\admin\\views\\menus\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|c:\\users\\phan van tien\\desktop\\h\u1ECDc t\u1EADp\\n\u0103m 3\\k\u1EF3 1\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng web\\bai tap\\bai tap ca nhan\\webapplication1\\areas\\admin\\views\\tbproducts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|solutionrelative:areas\\admin\\views\\tbproducts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|c:\\users\\phan van tien\\desktop\\h\u1ECDc t\u1EADp\\n\u0103m 3\\k\u1EF3 1\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng web\\bai tap\\bai tap ca nhan\\webapplication1\\areas\\admin\\views\\tbproducts\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|solutionrelative:areas\\admin\\views\\tbproducts\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|c:\\users\\phan van tien\\desktop\\h\u1ECDc t\u1EADp\\n\u0103m 3\\k\u1EF3 1\\ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng web\\bai tap\\bai tap ca nhan\\webapplication1\\areas\\admin\\views\\tbproducts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{012A7242-72DD-4CA8-A508-957219B36757}|WebApplication1.csproj|solutionrelative:areas\\admin\\views\\tbproducts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +34,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TbProduct.cs",
+              "DocumentMoniker": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Models\\TbProduct.cs",
+              "RelativeDocumentMoniker": "Models\\TbProduct.cs",
+              "ToolTip": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Models\\TbProduct.cs",
+              "RelativeToolTip": "Models\\TbProduct.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwBkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T14:20:14.129Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -46,56 +67,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Views\\Menus\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Menus\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Views\\Menus\\Edit.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Menus\\Edit.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAFQAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-30T15:50:40.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Views\\Menus\\Create.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Menus\\Create.cshtml",
-              "ToolTip": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Views\\Menus\\Create.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Menus\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-30T15:13:25.131Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Views\\Menus\\Index.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Menus\\Index.cshtml",
-              "ToolTip": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Views\\Menus\\Index.cshtml",
-              "RelativeToolTip": "Areas\\Admin\\Views\\Menus\\Index.cshtml",
-<<<<<<< HEAD
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAEkAAABAAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAACQAAAAAAAAAAAAAACoAAACBAAAAAAAAAA==",
->>>>>>> cd734459de75f7d6501bf2996bfddc9bfab7bff5
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Views\\TbProducts\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\TbProducts\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Views\\TbProducts\\Edit.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\TbProducts\\Edit.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEEAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-30T15:08:55.067Z",
+              "WhenOpened": "2024-11-06T14:10:52.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MenusController.cs",
-              "DocumentMoniker": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Controllers\\MenusController.cs",
-              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\MenusController.cs",
-              "ToolTip": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Controllers\\MenusController.cs",
-              "RelativeToolTip": "Areas\\Admin\\Controllers\\MenusController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAYwDgAAAAMAAAAAAAAAA==",
+              "Title": "TbProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Controllers\\TbProductsController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\TbProductsController.cs",
+              "ToolTip": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Controllers\\TbProductsController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\TbProductsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T13:11:14.87Z"
+              "WhenOpened": "2024-11-04T07:15:53.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Views\\TbProducts\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\TbProducts\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Views\\TbProducts\\Delete.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\TbProducts\\Delete.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T09:05:31.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Views\\TbProducts\\Index.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\TbProducts\\Index.cshtml",
+              "ToolTip": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Views\\TbProducts\\Index.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\TbProducts\\Index.cshtml",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAAFEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T07:19:51.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Views\\TbProducts\\Create.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\TbProducts\\Create.cshtml",
+              "ToolTip": "C:\\Users\\PHAN VAN TIEN\\Desktop\\H\u1ECDc T\u1EADp\\N\u0103m 3\\K\u1EF3 1\\Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng Web\\Bai Tap\\Bai Tap Ca Nhan\\WebApplication1\\Areas\\Admin\\Views\\TbProducts\\Create.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\TbProducts\\Create.cshtml",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAAAFwAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T07:55:33.613Z"
             }
           ]
         }
