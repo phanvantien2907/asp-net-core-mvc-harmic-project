@@ -6,7 +6,6 @@
 
 
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
     <section class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
@@ -20,7 +19,7 @@
                     </ol>
                 </div>
             </div>
-        </div><!-- /.container-fluid -->
+        </div>
     </section>
 
     <!-- Main content -->
@@ -36,7 +35,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <a class="btn btn-primary rounded" asp-area="Admin" asp-controller="Tbproducts" asp-action="Create">Thêm mới</a>
+                            <a class="btn btn-primary rounded" asp-controller="Tbproducts" asp-action="Create">Thêm mới</a>
                             <div class="card-tools">
                                 <div class="input-group input-group-sm" style="width: 150px;">
                                     <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
@@ -49,7 +48,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- /.card-header -->
+
                         <div class="card-body table-responsive p-0">
                             <table class="table table-hover text-nowrap">
                                 <thead>
@@ -62,7 +61,6 @@
                                         <th>Giá Giảm</th>
                                         <th>Số lượng</th>
                                         <th>Sp mới</th>
-                                        <th>Bán chạy</th>
                                         <th>Sao</th>
                                         <th>Hiện</th>
                                     </tr>
@@ -82,13 +80,12 @@
                                             <td>@string.Format("{0:N0}", item.PriceSale) đ</td>
                                             <td>@item.Quantity</td>
                                             <td>@item.IsNew</td>
-                                            <td>@item.IsBestSeller</td>
                                             <td>@item.Star</td>
                                             <td>@item.IsActive</td>
                                             <td>
-                                                <a asp-area="Admin" asp-action="Edit" asp-route-id="@item.ProductId" class="btn btn-primary">Sửa</a> |
-                                                <a asp-area="Admin" asp-action="Details" asp-route-id="@item.ProductId" class="btn btn-info">Chi tiết</a> |
-                                                <a asp-area="Admin" asp-action="Delete" asp-route-id="@item.ProductId" class="btn btn-danger">Xóa</a>
+                                                <a asp-action="Edit" asp-route-id="@item.ProductId" class="btn btn-primary">Sửa</a> |
+                                                <a asp-action="Details" asp-route-id="@item.ProductId" class="btn btn-info">Chi tiết</a> |
+                                                <a asp-action="Delete" asp-route-id="@item.ProductId" class="btn btn-danger">Xóa</a>
                                             </td>
                                         </tr>
                                     }
@@ -96,14 +93,10 @@
                                 </tbody>
                             </table>
                         </div>
-                        <!-- /.card-body -->
                     </div>
-                    <!-- /.card -->
                 </div>
             </div>
 
-            <!-- /.row -->
-        </div><!-- /.container-fluid -->
+        </div>
     </section>
-    <!-- /.content -->
 </div>

@@ -6,7 +6,6 @@
 
 
 <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
     <section class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
@@ -20,7 +19,7 @@
                     </ol>
                 </div>
             </div>
-        </div><!-- /.container-fluid -->
+        </div>
     </section>
 
     <!-- Main content -->
@@ -28,7 +27,6 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6">
-
                 </div>
             </div>
 
@@ -37,7 +35,8 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <a class="btn btn-primary rounded" asp-area="Admin" asp-controller="Menus" asp-action="Create">Thêm mới</a>
+                            <a asp-action="Create" class="btn btn-primary">Thêm mới</a>
+
                             <div class="card-tools">
                                 <div class="input-group input-group-sm" style="width: 150px;">
                                     <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
@@ -50,24 +49,25 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- /.card-header -->
+
                         <div class="card-body table-responsive p-0">
-                            <table class="table table-hover text-nowrap">
+                            <table class="table table-bordered table-hover text-center">
                                 <thead>
                                     <tr>
                                         <th>STT</th>
-                                        <th>Tiêu Đề</th>
+                                        <th>Tiêu đề</th>
                                         <th>Alias</th>
-                                        <th>Cấp</th>
+                                        <th>Cấp </th>
                                         <th>Vị Trí</th>
                                         <th>Hiện</th>
+                                        <th>Chức năng</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @{
                                         int i = 1;
                                     }
-                                    @foreach(var item in Model)
+                                    @foreach (var item in Model)
                                     {
                                         <tr>
                                             <td>@(i++)</td>
@@ -77,24 +77,20 @@
                                             <td>@item.Position</td>
                                             <td>@item.IsActive</td>
                                             <td>
-                                                <a asp-action="Edit" asp-route-id="@item.MenuId" class="btn btn-primary">Sửa</a>
-                                                <a asp-action="Details" asp-route-id="@item.MenuId" class="btn btn-info">Chi tiết</a>
+                                                <a asp-action="Edit" asp-route-id="@item.MenuId" class="btn btn-primary">Sửa</a> |
+                                                <a asp-action="Details" asp-route-id="@item.MenuId" class="btn btn-info">Chi tiết</a> |
                                                 <a asp-action="Delete" asp-route-id="@item.MenuId" class="btn btn-danger">Xóa</a>
                                             </td>
                                         </tr>
                                     }
-                                  
+
                                 </tbody>
                             </table>
                         </div>
-                        <!-- /.card-body -->
                     </div>
-                    <!-- /.card -->
                 </div>
             </div>
- 
-            <!-- /.row -->
-        </div><!-- /.container-fluid -->
+
+        </div>
     </section>
-    <!-- /.content -->
 </div>

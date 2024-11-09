@@ -15,7 +15,7 @@ namespace WebApplication1.ViewComponents
         public async Task<IViewComponentResult> InvokeAsync()
         {
             var items = _context.TbMenus
-                .Where(m => m.IsActive.HasValue && m.IsActive.Value)
+                .Where(m => m.IsActive && m.IsActive)
                 .OrderBy(m => m.Position)
                 .ToList();
 

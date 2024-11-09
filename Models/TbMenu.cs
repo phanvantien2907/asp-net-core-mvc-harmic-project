@@ -27,5 +27,5 @@ public partial class TbMenu
 
     public string? ModifiedBy { get; set; }
 
-    public bool? IsActive { get; set; }
+    public bool IsActive { get; set; }
 }

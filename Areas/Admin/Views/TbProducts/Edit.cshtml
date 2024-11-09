@@ -37,7 +37,7 @@
                         <!-- /.card-header -->
                         <!-- form start -->
                         <form asp-action="Edit">
-                            <input type="hidden" asp-for="MenuId" />
+                            <input type="hidden" asp-for="ProductId" />
                             <div class="card-body">
                                 <div class="form-group">
                                     <label asp-for="Title">Tiêu đề</label>
@@ -60,7 +60,7 @@
                                 <div class="form-group">
                                     <label asp-for="PriceSale">Giá Giảm</label>
                                     <input asp-for="PriceSale" class="form-control">
-                                    <span asp-validation-for="Levels" class="text-danger"></span>
+                                    <span asp-validation-for="PriceSale" class="text-danger"></span>
                                 </div>
 
                                 <div class="form-group">
@@ -70,8 +70,9 @@
                                 </div>
 
                                 <div class="form-group form-check">
-                                    <input type="checkbox" class="form-check-input" asp-for="IsActive" />
-                                    <label class="form-check-label" asp-for="IsActive">Hiển Thị</label>
+                                    <label class="form-check-label">
+                                     <input class="form-check-input" asp-for="IsActive" />
+                                    </label>
                                 </div>
 
                                 <div class="d-flex mt-3">

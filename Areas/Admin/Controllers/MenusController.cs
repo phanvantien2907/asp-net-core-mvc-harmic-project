@@ -1,4 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using WebApplication1.Models;
 
 namespace WebApplication1.Areas.Admin.Controllers
@@ -13,51 +19,140 @@ namespace WebApplication1.Areas.Admin.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        // GET: Admin/Menus
+        public async Task<IActionResult> Index()
         {
-            var menus = _context.TbMenus.ToList();
-            return View(menus);
+            return View(await _context.TbMenus.ToListAsync());
         }
 
+        // GET: Admin/Menus/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var tbMenu = await _context.TbMenus
+                .FirstOrDefaultAsync(m => m.MenuId == id);
+            if (tbMenu == null)
+            {
+                return NotFound();
+            }
+
+            return View(tbMenu);
+        }
+
+        // GET: Admin/Menus/Create
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Admin/Menus/Create
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("MenuId,Title,Alias,Description,Levels,ParentId,Position,CreatedDate,CreatedBy,ModifiedDate,ModifiedBy,IsActive")] TbMenu tbMenu)
         {
             if (ModelState.IsValid)
             {
-                tbMenu.Alias = WebApplication1.Utilities.Function.TittleGenerationAlias(tbMenu.Title); 
-                _context.Add(tbMenu); 
+                tbMenu.Alias = WebApplication1.Utilities.Function.TittleGenerationAlias(tbMenu.Title);
+                _context.Add(tbMenu);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(tbMenu); 
+            return View(tbMenu);
         }
 
-        public IActionResult Create()
+        // GET: Admin/Menus/Edit/5
+        public async Task<IActionResult> Edit(int? id)
         {
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var tbMenu = await _context.TbMenus.FindAsync(id);
+            if (tbMenu == null)
+            {
+                return NotFound();
+            }
+            return View(tbMenu);
         }
 
-        // GET THÔNG TIN
-        public  IActionResult Edit()
+        // POST: Admin/Menus/Edit/5
+        // To protect from overposting attacks, enable the specific properties you want to bind to.
+        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("MenuId,Title,Alias,Description,Levels,ParentId,Position,CreatedDate,CreatedBy,ModifiedDate,ModifiedBy,IsActive")] TbMenu tbMenu)
         {
-           
-            return View();
+            if (id != tbMenu.MenuId)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(tbMenu);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!TbMenuExists(tbMenu.MenuId))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(tbMenu);
         }
 
-        public ActionResult Delete() 
+        // GET: Admin/Menus/Delete/5
+        public async Task<IActionResult> Delete(int? id)
         {
-            
-            return View();
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var tbMenu = await _context.TbMenus
+                .FirstOrDefaultAsync(m => m.MenuId == id);
+            if (tbMenu == null)
+            {
+                return NotFound();
+            }
+
+            return View(tbMenu);
         }
 
-        
-        public ActionResult Details()
+        // POST: Admin/Menus/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            
-            return View();
+            var tbMenu = await _context.TbMenus.FindAsync(id);
+            if (tbMenu != null)
+            {
+                _context.TbMenus.Remove(tbMenu);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
-        
+        private bool TbMenuExists(int id)
+        {
+            return _context.TbMenus.Any(e => e.MenuId == id);
+        }
     }
 }

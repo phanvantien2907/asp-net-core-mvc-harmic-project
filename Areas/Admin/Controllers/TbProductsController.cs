@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using WebApplication1.Models;
 
 namespace WebApplication1.Areas.Admin.Controllers
@@ -48,7 +49,7 @@ namespace WebApplication1.Areas.Admin.Controllers
         // GET: Admin/TbProducts/Create
         public IActionResult Create()
         {
-            ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategory, "CategoryProductId", "Tittle");
+            ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategory, "CategoryProductId", "Title");
             return View();
         }
 
@@ -78,7 +79,8 @@ namespace WebApplication1.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var tbProduct = await _context.TbProducts.FindAsync(id);
+
+                var tbProduct = await _context.TbProducts.FindAsync(id);
             if (tbProduct == null)
             {
                 return NotFound();
