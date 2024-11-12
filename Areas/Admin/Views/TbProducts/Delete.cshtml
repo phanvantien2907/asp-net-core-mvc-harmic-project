@@ -4,7 +4,6 @@
 }
 
 <!-- Content Wrapper. Contains page content -->
-<!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -44,42 +43,34 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <label asp-for="Description">Mô Tả: </label>
-                                    @Model?.Description
-                                </div>
-
-                                <div class="form-group">
-                                    <label asp-for="Image">Ảnh:</label>
-                                    @Model?.Image
+                                    <label asp-for="CategoryProductId">Danh Mục: </label>
+                                    @Model?.CategoryProductId
                                 </div>
 
                                 <div class="form-group">
                                     <label asp-for="Price">Giá:</label>
-                                    @Model?.Price
-                                </div
+                                    @string.Format("{0:N0}", Model?.Price) đ
+                                </div>
 
                                 <div class="form-group">
                                     <label asp-for="PriceSale">Giá Sale:</label>
-                                    @Model?.PriceSale
+                                    @string.Format("{0:N0}", Model?.PriceSale) đ
                                 </div>
 
-                                <div class="form-group form-check">
-                                    <label asp-for="IsActive">Hiện:</label>
-                                    @Model?.IsActive
+                                <div class="form-group">
+                                    <label asp-for="Quantity">Số lượng: </label>
+                                    @Model?.Quantity
                                 </div>
 
                                 <div class="d-flex mt-3">
                                     <div class="form-group mr-2">
                                         <button type="submit" class="btn btn-primary rounded">Xóa</button>
-
                                     </div>
 
                                     <div class="form-group">
                                         <a type="type" class="btn btn-danger rounded mr-3" asp-action="Index">Quay Lại</a>
                                     </div>
-
                                 </div>
-
                             </div>
                         </form>
                     </div>

@@ -46,6 +46,13 @@
                                 </div>
 
                                 <div class="form-group">
+                                    <label asp-for="CategoryProductId">Danh Mục</label>
+                                    <select asp-for="CategoryProductId" class="form-control" asp-items="ViewBag.CategoryProductId">
+                                        <option value="0" selected>[Chọn danh mục]</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
                                     <label asp-for="Alias">Alias</label>
                                     <input asp-for="Alias" class="form-control">
                                     <span asp-validation-for="Alias" class="text-danger"></span>
@@ -64,6 +71,12 @@
                                 </div>
 
                                 <div class="form-group">
+                                    <label asp-for="Star">Số Sao</label>
+                                    <input asp-for="Star" class="form-control" readonly>
+                                    <span asp-validation-for="Alias" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
                                     <label asp-for="Quantity">Số lượng</label>
                                     <input asp-for="Quantity" class="form-control">
                                     <span asp-validation-for="Quantity" class="text-danger"></span>
@@ -71,7 +84,14 @@
 
                                 <div class="form-group form-check">
                                     <label class="form-check-label">
-                                     <input class="form-check-input" asp-for="IsActive" />
+                                        <input type="checkbox" class="form-check-input" asp-for="IsNew" /> Sản phẩm mới
+                                    </label>
+                                </div>
+
+
+                                <div class="form-group form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" asp-for="IsActive" /> Hiển thị
                                     </label>
                                 </div>
 

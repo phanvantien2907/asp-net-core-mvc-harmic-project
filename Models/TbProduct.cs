@@ -33,13 +33,13 @@ public partial class TbProduct
 
     public string? ModifiedBy { get; set; }
 
-    public bool? IsNew { get; set; }
+    public bool IsNew { get; set; }
 
     public bool? IsBestSeller { get; set; }
 
     public int? UnitInStock { get; set; }
 
-    public bool? IsActive { get; set; }
+    public bool IsActive { get; set; }
 
     public int? Star { get; set; }
 
