@@ -55,7 +55,7 @@ namespace WebApplication1.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Title,Alias,Description,Levels,ParentId,Position,CreatedDate,CreatedBy,ModifiedDate,ModifiedBy,IsActive")] TbMenu tbMenu)
+        public async Task<IActionResult> Create([Bind("MenuId,Title,Alias,Description,Levels,ParentId,Position,CreatedDate,CreatedBy,ModifiedDate,ModifiedBy,IsActive")] TbMenu tbMenu)
         {
             if (ModelState.IsValid)
             {
@@ -89,7 +89,7 @@ namespace WebApplication1.Areas.Admin.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Title,Alias,Description,Levels,ParentId,Position,CreatedDate,CreatedBy,ModifiedDate,ModifiedBy,IsActive")] TbMenu tbMenu)
+        public async Task<IActionResult> Edit(int id, [Bind("MenuId,Title,Alias,Description,Levels,ParentId,Position,CreatedDate,CreatedBy,ModifiedDate,ModifiedBy,IsActive")] TbMenu tbMenu)
         {
             if (id != tbMenu.MenuId)
             {
@@ -100,6 +100,18 @@ namespace WebApplication1.Areas.Admin.Controllers
             {
                 try
                 {
+                    var originalMenu = await _context.TbMenus.AsNoTracking().FirstOrDefaultAsync(m => m.MenuId == id);
+
+                    if (originalMenu == null)
+                    {
+                        return NotFound();
+                    }
+
+                    if (originalMenu.Title != tbMenu.Title)
+                    {
+                        tbMenu.Alias = WebApplication1.Utilities.Function.TittleGenerationAlias(tbMenu.Title);
+                    }
+
                     _context.Update(tbMenu);
                     await _context.SaveChangesAsync();
                 }
@@ -118,6 +130,7 @@ namespace WebApplication1.Areas.Admin.Controllers
             }
             return View(tbMenu);
         }
+
 
         // GET: Admin/Menus/Delete/5
         public async Task<IActionResult> Delete(int? id)

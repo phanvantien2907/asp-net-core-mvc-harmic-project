@@ -105,6 +105,18 @@ namespace WebApplication1.Areas.Admin.Controllers
             {
                 try
                 {
+                    var originalMenu = await _context.TbProducts.AsNoTracking().FirstOrDefaultAsync(m => m.ProductId == id);
+
+                    if (originalMenu == null)
+                    {
+                        return NotFound();
+                    }
+
+                    if (originalMenu.Title != tbProduct.Title)
+                    {
+                        tbProduct.Alias = WebApplication1.Utilities.Function.TittleGenerationAlias(tbProduct.Title);
+                    }
+
                     _context.Update(tbProduct);
                     await _context.SaveChangesAsync();
                 }

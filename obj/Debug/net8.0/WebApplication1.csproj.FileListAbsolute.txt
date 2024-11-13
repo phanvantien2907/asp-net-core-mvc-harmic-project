@@ -1856,3 +1856,9 @@ C:\Users\PHAN VAN TIEN\Desktop\Học Tập\Năm 3\Kỳ 1\Phát triển ứng d�
 C:\Users\PHAN VAN TIEN\Desktop\Học Tập\Năm 3\Kỳ 1\Phát triển ứng dụng Web\Bai Tap\Bai Tap Ca Nhan\WebApplication1\bin\Debug\net8.0\refs\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\PHAN VAN TIEN\Desktop\Học Tập\Năm 3\Kỳ 1\Phát triển ứng dụng Web\Bai Tap\Bai Tap Ca Nhan\WebApplication1\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\PHAN VAN TIEN\Desktop\Học Tập\Năm 3\Kỳ 1\Phát triển ứng dụng Web\Bai Tap\Bai Tap Ca Nhan\WebApplication1\bin\Debug\net8.0\refs\Microsoft.Extensions.Logging.dll
+C:\Users\PHAN VAN TIEN\Desktop\Học Tập\Năm 3\Kỳ 1\Phát triển ứng dụng Web\Bai Tap\Bai Tap Ca Nhan\WebApplication1\bin\Debug\net8.0\WebApplication1.staticwebassets.endpoints.json
+C:\Users\PHAN VAN TIEN\Desktop\Học Tập\Năm 3\Kỳ 1\Phát triển ứng dụng Web\Bai Tap\Bai Tap Ca Nhan\WebApplication1\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\PHAN VAN TIEN\Desktop\Học Tập\Năm 3\Kỳ 1\Phát triển ứng dụng Web\Bai Tap\Bai Tap Ca Nhan\WebApplication1\obj\Debug\net8.0\staticwebassets\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\PHAN VAN TIEN\Desktop\Học Tập\Năm 3\Kỳ 1\Phát triển ứng dụng Web\Bai Tap\Bai Tap Ca Nhan\WebApplication1\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\PHAN VAN TIEN\Desktop\Học Tập\Năm 3\Kỳ 1\Phát triển ứng dụng Web\Bai Tap\Bai Tap Ca Nhan\WebApplication1\bin\Debug\net8.0\elFinder.NetCore.dll
+C:\Users\PHAN VAN TIEN\Desktop\Học Tập\Năm 3\Kỳ 1\Phát triển ứng dụng Web\Bai Tap\Bai Tap Ca Nhan\WebApplication1\bin\Debug\net8.0\SixLabors.ImageSharp.dll

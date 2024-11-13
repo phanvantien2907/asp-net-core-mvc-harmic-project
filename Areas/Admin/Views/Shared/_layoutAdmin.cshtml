@@ -24,7 +24,11 @@
     <!-- Daterange picker -->
     <link rel="stylesheet" href="~/Content/admin/plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
-    <link rel="stylesheet" href="~/Content/admin/plugins/summernote/summernote-bs4.min.css">
+    @* <link rel="stylesheet" href="~/Content/admin/plugins/summernote/summernote-bs4.min.css"> *@ 
+
+    <!-- jQuery -->
+    <script src="~/admin/lib/jqueryui/jquery-ui.js"></script>
+    <script src="~/admin/lib/jquery/jquery.min.js"></script>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
@@ -848,6 +852,7 @@
 
         <!-- Content Wrapper. Contains page content -->
         @RenderBody()
+        @RenderSection("Scripts", required: false)
         <!-- /.content-wrapper -->
         <footer class="main-footer">
             <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
@@ -865,9 +870,9 @@
     </div>
     <!-- ./wrapper -->
     <!-- jQuery -->
-    <script src="~/Content/admin/plugins/jquery/jquery.min.js"></script>
+    @*<script src="~/Content/admin/plugins/jquery/jquery.min.js"></script> *@  
     <!-- jQuery UI 1.11.4 -->
-    <script src="~/Content/admin/plugins/jquery-ui/jquery-ui.min.js"></script>
+    @*<script src="~/Content/admin/plugins/jquery-ui/jquery-ui.min.js"></script> *@ 
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
         $.widget.bridge('uibutton', $.ui.button)
@@ -889,7 +894,7 @@
     <!-- Tempusdominus Bootstrap 4 -->
     <script src="~/Content/admin/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
     <!-- Summernote -->
-    <script src="~/Content/admin/plugins/summernote/summernote-bs4.min.js"></script>
+    @* <script src="~/Content/admin/plugins/summernote/summernote-bs4.min.js"></script>*@ 
     <!-- overlayScrollbars -->
     <script src="~/Content/admin/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->

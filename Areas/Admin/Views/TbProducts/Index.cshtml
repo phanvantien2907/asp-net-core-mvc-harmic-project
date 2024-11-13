@@ -55,6 +55,7 @@
                                     <tr>
                                         <th>STT</th>
                                         <th>Tên Sản Phẩm</th>
+                                        <th>Alias</th>
                                         <th>Danh Mục</th>
                                         <th>Ảnh </th>
                                         <th>Giá</th>
@@ -62,6 +63,7 @@
                                         <th>Số lượng</th>
                                         <th>Sp mới</th>
                                         <th>Sao</th>
+                                        <th>Chi Tiết</th>
                                         <th>Hiện</th>
                                     </tr>
                                 </thead>
@@ -74,6 +76,7 @@
                                         <tr>
                                             <td>@(i++)</td>
                                             <td>@item.Title</td>
+                                            <td>@item.Alias</td>
                                             <td>@item.CategoryProduct?.Title</td>
                                             <td><img src="@item.Image" width="50" height="50" /></td>
                                             <td>@string.Format("{0:N0}", item.Price) đ</td>
@@ -88,6 +91,7 @@
                                                 <td><span class="btn btn-danger">Ẩn</span></td>
                                             })
                                             <td>@item.Star</td>
+                                            <td>@Html.Raw(item.Detail)</td>
                                             @if(item.IsActive)
                                             {
                                                 <td><span class="btn btn-success">Hiện</span></td>

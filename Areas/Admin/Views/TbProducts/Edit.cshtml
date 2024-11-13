@@ -54,8 +54,19 @@
 
                                 <div class="form-group">
                                     <label asp-for="Alias">Alias</label>
-                                    <input asp-for="Alias" class="form-control">
+                                    <input asp-for="Alias" class="form-control" readonly>
                                     <span asp-validation-for="Alias" class="text-danger"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label asp-for="Image" class="control-label">Ảnh</label>
+                                    <div class="input-group mb-3">
+                                        <div class="input group-preprend">
+                                            <button type="button" class="btn btn-success btn-round" onclick="openDialog()">Choose a picture</button>
+                                        </div>
+                                        <input type="text" class="form-control" id="file-input" asp-for="Image" aria-describedby="button-addon2">
+                                    </div>
+                                    <span asp-validation-for="Image" class="text-danger"></span>
                                 </div>
 
                                 <div class="form-group">
@@ -82,12 +93,17 @@
                                     <span asp-validation-for="Quantity" class="text-danger"></span>
                                 </div>
 
+                                <div class="form-group">
+                                    <label asp-for="Detail">Chi tiết</label>
+                                    <textarea asp-for="Detail" class="form-control"></textarea>
+                                    <span asp-validation-for="Detail" class="text-danger"></span>
+                                </div>
+
                                 <div class="form-group form-check">
                                     <label class="form-check-label">
                                         <input type="checkbox" class="form-check-input" asp-for="IsNew" /> Sản phẩm mới
                                     </label>
                                 </div>
-
 
                                 <div class="form-group form-check">
                                     <label class="form-check-label">
@@ -114,3 +130,16 @@
         </div>
     </section>
 </div>
+
+
+
+@{
+    var summernote = new WebApplication1.Areas.Admin.Model.SummerNote("#Detail");
+    <partial name="_SummerNote" model="summernote" />
+}
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

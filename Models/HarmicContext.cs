@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
@@ -148,7 +148,7 @@ public partial class HarmicContext : DbContext
 
             entity.ToTable("tb_Menu");
 
-            entity.Property(e => e.MenuId).ValueGeneratedNever();
+            entity.Property(e => e.MenuId);
             entity.Property(e => e.CreatedBy).HasColumnType("datetime");
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
@@ -219,7 +219,7 @@ public partial class HarmicContext : DbContext
 
             entity.ToTable("tb_Product");
 
-            entity.Property(e => e.ProductId).ValueGeneratedNever();
+            entity.Property(e => e.ProductId);
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
 
