@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication1.Models;
 
 public partial class TbContact
 {
+    [Key]
     public int ContactId { get; set; }
 
     public string? Name { get; set; }

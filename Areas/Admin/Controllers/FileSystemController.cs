@@ -3,11 +3,13 @@ using elFinder.NetCore;
 using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebApplication1.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [Route("/Admin/el-finder-file-system")]
+    [Authorize(AuthenticationSchemes = "AdminScheme")]
     public class FileSystemController : Controller
     {
         IWebHostEnvironment _env;

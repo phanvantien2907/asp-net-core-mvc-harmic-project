@@ -150,7 +150,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <ul class="nav product-tab-nav pb-10" id="myTab" role="tablist">
-                    @foreach (var item in productCategories.Where(i=> (bool)i.IsActive)) {
+                    @foreach (var item in productCategories.Where(i=> i.IsActive == true))  { // sửa lỗi này
                                         
                     <li class="nav-item" role="presentation">
                         <a class="active" id="@item.Alias-tab" data-bs-toggle="tab" href="@item.Alias" role="tab" aria-controls="all-items" aria-selected="true">

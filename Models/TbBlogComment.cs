@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication1.Models;
 
 public partial class TbBlogComment
 {
+    [Key]
     public int CommentId { get; set; }
 
     public string? Name { get; set; }

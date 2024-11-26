@@ -63,7 +63,7 @@
                                         <th>Số lượng</th>
                                         <th>Sp mới</th>
                                         <th>Sao</th>
-                                        <th>Chi Tiết</th>
+                                        <th>Mô tả</th>
                                         <th>Hiện</th>
                                     </tr>
                                 </thead>
@@ -82,7 +82,7 @@
                                             <td>@string.Format("{0:N0}", item.Price) đ</td>
                                             <td>@string.Format("{0:N0}", item.PriceSale) đ</td>
                                             <td>@item.Quantity</td>
-                                            @if (item.IsNew)
+                                            @if (item.IsNew == true)
                                             {
                                                 <td><span class="btn btn-success">Hiện</span></td>
                                             }

@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication1.Models;
 
 public partial class TbOrderDetail
 {
+    [Key]
     public int OrderDetailId { get; set; }
 
     public int? OrderId { get; set; }

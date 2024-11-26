@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication1.Models;
 
 public partial class TbRole
 {
+    [Key]
     public int RoleId { get; set; }
 
     public string? RoleName { get; set; }

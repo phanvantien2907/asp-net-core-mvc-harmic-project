@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication1.Models;
 
 public partial class TbProductCategory
 {
+    [Key]
     public int CategoryProductId { get; set; }
 
     public string? Title { get; set; }
@@ -25,7 +27,7 @@ public partial class TbProductCategory
 
     public string? ModifiedBy { get; set; }
 
-    public bool? IsActive { get; set; }
+    public bool IsActive { get; set; }
 
     public virtual ICollection<TbNews> TbNews { get; set; } = new List<TbNews>();
 

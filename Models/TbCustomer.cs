@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication1.Models;
 
 public partial class TbCustomer
 {
+    [Key]
     public int CustomerId { get; set; }
 
     public string? Username { get; set; }

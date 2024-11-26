@@ -19,7 +19,7 @@ namespace WebApplication1.Controllers
 
         public IActionResult Index()
         {
-            ViewBag.productCateg = _context.TbProductCategory.ToList();
+            ViewBag.productCateg = _context.TbProductCategories.ToList();
             ViewBag.productNew = _context.TbProducts.Where(m => m.IsNew == true).ToList();
             return View();
         }

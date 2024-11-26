@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,7 @@ using WebApplication1.Models;
 namespace WebApplication1.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(AuthenticationSchemes = "AdminScheme")]
     public class TbProductsController : Controller
     {
         private readonly HarmicContext _context;
@@ -49,7 +51,7 @@ namespace WebApplication1.Areas.Admin.Controllers
         // GET: Admin/TbProducts/Create
         public IActionResult Create()
         {
-            ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategory, "CategoryProductId", "Title");
+            ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategories, "CategoryProductId", "Title");
             return View();
         }
 
@@ -67,7 +69,7 @@ namespace WebApplication1.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategory, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
+            ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategories, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
             return View(tbProduct);
         }
 
@@ -85,7 +87,7 @@ namespace WebApplication1.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategory, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
+            ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategories, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
             return View(tbProduct);
         }
 
@@ -133,7 +135,7 @@ namespace WebApplication1.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategory, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
+            ViewData["CategoryProductId"] = new SelectList(_context.TbProductCategories, "CategoryProductId", "CategoryProductId", tbProduct.CategoryProductId);
             return View(tbProduct);
         }
 

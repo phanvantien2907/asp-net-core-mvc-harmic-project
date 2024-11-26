@@ -1,5 +1,9 @@
-using WebApplication1.Models;
+﻿using WebApplication1.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.Extensions.Configuration;
+using System.Configuration;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +14,26 @@ builder.Services.AddDbContext<HarmicContext>(options =>
 
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
+
+
+// xác thực admin
+builder.Services.AddAuthentication("AdminScheme").AddCookie("AdminScheme", options =>
+{
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+    options.LoginPath = "/Admin/dang-nhap";
+    options.AccessDeniedPath = "/AccessDenied";
+    options.ReturnUrlParameter = "returnURL";
+});
+
+// config session
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(100); // Thời gian hết hạn session
+    options.Cookie.HttpOnly = true; // Bảo mật cookie session
+    options.Cookie.IsEssential = true; // Bắt buộc cookie
+});
 
 
 var app = builder.Build();
@@ -27,12 +51,20 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseSession();
+app.UseAuthentication();
 app.UseAuthorization();
 
 // admin
 app.MapControllerRoute(
     name: "areas",
     pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+
+// route cho login admin
+app.MapControllerRoute(
+    name: "AdminLogin",
+    pattern: "Admin/dang-nhap",
+    defaults: new { controller = "Login", action = "Index", area = "Admin" });
 
 app.MapControllerRoute(
     name: "default",

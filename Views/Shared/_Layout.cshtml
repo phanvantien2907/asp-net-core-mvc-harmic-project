@@ -22,12 +22,17 @@
     <link rel="stylesheet" href="~/assets/css/plugins/animate.min.css">
     <link rel="stylesheet" href="~/assets/css/plugins/jquery-ui.min.css">
     <link rel="stylesheet" href="~/assets/css/plugins/swiper-bundle.min.css">
-    <link rel="stylesheet" href="~/assets/css/plugins/nice-select.css">
+    <link rel="stylesheet" href="~/assets/css/plugins/nice-select.css"> 
     <link rel="stylesheet" href="~/assets/css/plugins/magnific-popup.min.css" />
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="~/assets/css/style.css">
+    <link href="~/assets/toastr/toastr.css" rel="stylesheet" />
+     
 
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    
 </head>
 
 <body>
@@ -35,11 +40,12 @@
     <div class="main-wrapper">
 
         <!-- Begin Main Header Area -->
-        @Html.Partial("Header")
+        @await Html.PartialAsync("Header")
             @RenderBody();
+        @RenderSection("Scripts", required: false)
         <!-- Blog Area End Here -->
         <!-- Begin Footer Area -->
-            @Html.Partial("Footer")
+        @await Html.PartialAsync("Footer")
         <!-- Footer Area End Here -->
         <!-- Begin Scroll To Top -->
         <a class="scroll-to-top" href="">
@@ -70,6 +76,7 @@
 
     <!--Main JS (Common Activation Codes)-->
     <script src="~/assets/js/main.js"></script>
+
 
 </body>
 

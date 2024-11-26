@@ -37,7 +37,7 @@ public partial class TbProduct
 
     public string? ModifiedBy { get; set; }
 
-    public bool IsNew { get; set; }
+    public bool? IsNew { get; set; }
 
     public bool? IsBestSeller { get; set; }
 

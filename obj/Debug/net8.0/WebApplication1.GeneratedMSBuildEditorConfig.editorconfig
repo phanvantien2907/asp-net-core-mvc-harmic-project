@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/WebApplication1/Areas/Admin/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/WebApplication1/Areas/Admin/Views/Menus/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVudXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -56,6 +60,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVudXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/WebApplication1/Areas/Admin/Views/Regisiter/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUmVnaXNpdGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/WebApplication1/Areas/Admin/Views/Shared/Components/AdminNavbar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWRtaW5OYXZiYXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/WebApplication1/Areas/Admin/Views/Shared/Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEZvb3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -70,6 +82,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/WebApplication1/Areas/Admin/Views/Shared/_layoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9sYXlvdXRBZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/WebApplication1/Areas/Admin/Views/Shared/_loginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9sb2dpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/WebApplication1/Areas/Admin/Views/Shared/_SummerNote.cshtml]
@@ -108,12 +124,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/WebApplication1/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/WebApplication1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/WebApplication1/Views/Product/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/WebApplication1/Views/Regisiter/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXNpdGVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/PHAN VAN TIEN/Desktop/Học Tập/Năm 3/Kỳ 1/Phát triển ứng dụng Web/Bai Tap/Bai Tap Ca Nhan/WebApplication1/Views/Shared/Components/Blog/Default.cshtml]

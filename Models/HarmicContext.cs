@@ -1,4 +1,4 @@
-﻿    using System;
+﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,6 +16,8 @@ public partial class HarmicContext : DbContext
     }
 
     public virtual DbSet<TbAccount> TbAccounts { get; set; }
+
+    public virtual DbSet<TbAdminUser> TbAdminUsers { get; set; }
 
     public virtual DbSet<TbBlog> TbBlogs { get; set; }
 
@@ -39,13 +41,13 @@ public partial class HarmicContext : DbContext
 
     public virtual DbSet<TbProduct> TbProducts { get; set; }
 
-    public virtual DbSet<TbProductCategory> TbProductCategory { get; set; }
+    public virtual DbSet<TbProductCategory> TbProductCategories { get; set; }
 
     public virtual DbSet<TbProductReview> TbProductReviews { get; set; }
 
     public virtual DbSet<TbRole> TbRoles { get; set; }
 
-   
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<TbAccount>(entity =>
@@ -54,13 +56,9 @@ public partial class HarmicContext : DbContext
 
             entity.ToTable("tb_Account");
 
-            entity.Property(e => e.AccountId).ValueGeneratedNever();
-            entity.Property(e => e.Email).HasMaxLength(50);
-            entity.Property(e => e.FullName).HasMaxLength(50);
             entity.Property(e => e.LastLogin)
                 .HasMaxLength(10)
                 .IsFixedLength();
-            entity.Property(e => e.Password).HasMaxLength(50);
             entity.Property(e => e.Phone).HasMaxLength(50);
             entity.Property(e => e.Username).HasMaxLength(50);
 
@@ -69,13 +67,21 @@ public partial class HarmicContext : DbContext
                 .HasConstraintName("FK_tb_Account_tb_Role");
         });
 
+        modelBuilder.Entity<TbAdminUser>(entity =>
+        {
+            entity.HasKey(e => e.UserId);
+
+            entity.ToTable("tb_AdminUser");
+
+            entity.Property(e => e.UserId).HasColumnName("UserID");
+        });
+
         modelBuilder.Entity<TbBlog>(entity =>
         {
             entity.HasKey(e => e.BlogId);
 
             entity.ToTable("tb_Blog");
 
-            entity.Property(e => e.BlogId).ValueGeneratedNever();
             entity.Property(e => e.Alias).HasMaxLength(200);
             entity.Property(e => e.CreatedBy).HasMaxLength(150);
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
@@ -97,7 +103,6 @@ public partial class HarmicContext : DbContext
 
             entity.ToTable("tb_BlogComment");
 
-            entity.Property(e => e.CommentId).ValueGeneratedNever();
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.Detail).HasMaxLength(50);
             entity.Property(e => e.Email).HasMaxLength(50);
@@ -115,7 +120,6 @@ public partial class HarmicContext : DbContext
 
             entity.ToTable("tb_Category");
 
-            entity.Property(e => e.CategoryId).ValueGeneratedNever();
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
         });
@@ -126,7 +130,6 @@ public partial class HarmicContext : DbContext
 
             entity.ToTable("tb_Contact");
 
-            entity.Property(e => e.ContactId).ValueGeneratedNever();
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
         });
@@ -137,7 +140,6 @@ public partial class HarmicContext : DbContext
 
             entity.ToTable("tb_Customer");
 
-            entity.Property(e => e.CustomerId).ValueGeneratedNever();
             entity.Property(e => e.Birthday).HasColumnType("datetime");
             entity.Property(e => e.LastLogin).HasColumnType("datetime");
         });
@@ -148,7 +150,6 @@ public partial class HarmicContext : DbContext
 
             entity.ToTable("tb_Menu");
 
-            entity.Property(e => e.MenuId);
             entity.Property(e => e.CreatedBy).HasColumnType("datetime");
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
@@ -160,7 +161,6 @@ public partial class HarmicContext : DbContext
 
             entity.ToTable("tb_News");
 
-            entity.Property(e => e.NewsId).ValueGeneratedNever();
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
 
@@ -175,7 +175,6 @@ public partial class HarmicContext : DbContext
 
             entity.ToTable("tb_Order");
 
-            entity.Property(e => e.OrderId).ValueGeneratedNever();
             entity.Property(e => e.Code)
                 .HasMaxLength(10)
                 .IsFixedLength();
@@ -196,7 +195,6 @@ public partial class HarmicContext : DbContext
 
             entity.ToTable("tb_OrderDetail");
 
-            entity.Property(e => e.OrderDetailId).ValueGeneratedNever();
             entity.Property(e => e.Price).HasColumnType("decimal(18, 0)");
 
             entity.HasOne(d => d.Order).WithMany(p => p.TbOrderDetails)
@@ -209,8 +207,6 @@ public partial class HarmicContext : DbContext
             entity.HasKey(e => e.OrderStatusId);
 
             entity.ToTable("tb_OrderStatus");
-
-            entity.Property(e => e.OrderStatusId).ValueGeneratedNever();
         });
 
         modelBuilder.Entity<TbProduct>(entity =>
@@ -219,7 +215,9 @@ public partial class HarmicContext : DbContext
 
             entity.ToTable("tb_Product");
 
-            entity.Property(e => e.ProductId);
+            entity.Property(e => e.IsNew)
+          .HasDefaultValue(false);
+
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
 
@@ -234,7 +232,6 @@ public partial class HarmicContext : DbContext
 
             entity.ToTable("tb_ProductCategory");
 
-            entity.Property(e => e.CategoryProductId).ValueGeneratedNever();
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
             entity.Property(e => e.ModifiedDate).HasColumnType("datetime");
         });
@@ -245,7 +242,6 @@ public partial class HarmicContext : DbContext
 
             entity.ToTable("tb_ProductReview");
 
-            entity.Property(e => e.ProductReviewId).ValueGeneratedNever();
             entity.Property(e => e.CreatedDate).HasColumnType("datetime");
 
             entity.HasOne(d => d.Product).WithMany(p => p.TbProductReviews)
@@ -258,8 +254,6 @@ public partial class HarmicContext : DbContext
             entity.HasKey(e => e.RoleId);
 
             entity.ToTable("tb_Role");
-
-            entity.Property(e => e.RoleId).ValueGeneratedNever();
         });
 
         OnModelCreatingPartial(modelBuilder);

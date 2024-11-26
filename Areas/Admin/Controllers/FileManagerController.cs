@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication1.Areas.Admin.Controllers
 {
@@ -6,6 +7,7 @@ namespace WebApplication1.Areas.Admin.Controllers
     {
         [Area("Admin")]
         [Route("/Admin/file-manager")]
+        [Authorize(AuthenticationSchemes = "AdminScheme")]
         public IActionResult Index()
         {
             return View();
