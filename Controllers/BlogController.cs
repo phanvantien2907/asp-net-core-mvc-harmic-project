@@ -20,7 +20,7 @@ namespace Harmic.Controllers
 
 
         [Route("/blog/{alias}-{id}.html")]
-        public async Task <IActionResult> Details(int? id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.TbBlogs == null)
             {
@@ -29,14 +29,40 @@ namespace Harmic.Controllers
 
             var blogs = await _context.TbBlogs.FirstOrDefaultAsync(m => m.BlogId == id);
 
-            if (blogs == null) 
+            if (blogs == null)
             {
                 return NotFound();
             }
-            
+
             ViewBag.blogComment = _context.TbBlogComments.Where(m => m.BlogId == id && m.IsActive == true).ToList();
 
             return View(blogs);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddnewComment(TbBlogComment model)
+        {
+            try
+            {
+                var newcmt = new TbBlogComment
+                {
+                    BlogId = model.BlogId,
+                    Name = model.Name,
+                    Email = model.Email,
+                    Phone = model.Phone,
+                    CreatedDate = DateTime.Now,
+                    Detail = model.Detail,
+                    IsActive = true
+                };
+                await _context.TbBlogComments.AddAsync(newcmt);
+                await _context.SaveChangesAsync();
+                return Json(new { status = true });
+            }
+            catch
+            {
+                return Json(new { status = false });
+            }
+
         }
     }
 }

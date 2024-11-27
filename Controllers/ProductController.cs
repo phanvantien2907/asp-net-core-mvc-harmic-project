@@ -36,5 +36,6 @@ namespace WebApplication1.Controllers
             ViewBag.productRelated = _context.TbProducts.Where(i => i.ProductId!= id && i.CategoryProductId == products.CategoryProductId).Take(5).OrderByDescending(i => i.ProductId).ToList();
             return View(products);
         }
+
     }
 }

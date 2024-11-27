@@ -97,7 +97,7 @@
                                     </div>
                                     <div class="blog-comment-content">
                                         <div class="user-meta">
-                                            <span><strong>@item.Name -</strong> @item ?.CreatedDate.Value.ToString("dd/mm/yyyyy")</span>
+                                            <span><strong>@item.Name -</strong>@item.CreatedDate?.ToString("dd/MM/yyyy")</span>
                                             <a class="btn btn-link hover-white d-none d-md-flex" href="javascript:void(0)">
                                                 <i class="fa fa-reply me-2"></i>
                                                 Reply
@@ -116,23 +116,24 @@
                             </div>
                             <div class="feedback-area section-space-top-55">
                                 <h4 class="heading mb-1">Leave a comment</h4>
-                                <form class="feedback-form pt-8" action="#">
+                                <form class="feedback-form pt-8">
                                     <div class="group-input">
                                         <div class="form-field me-md-6 mb-6 mb-md-0">
-                                            <input type="text" name="name" placeholder="Your Name*" class="input-field">
+                                            <input type="text" id="c_name" name="name" placeholder="Your Name*" class="input-field">
                                         </div>
                                         <div class="form-field me-md-6 mb-6 mb-md-0">
-                                            <input type="text" name="email" placeholder="Your Email*" class="input-field">
+                                            <input type="text" id="c_email" name="email" placeholder="Your Email*" class="input-field">
                                         </div>
                                         <div class="form-field">
-                                            <input type="text" name="number" placeholder="Phone number" class="input-field">
+                                            <input type="text" id="c_phone" name="number" placeholder="Phone number" class="input-field">
                                         </div>
                                     </div>
                                     <div class="form-field mt-6">
-                                        <textarea name="message" placeholder="Message" class="textarea-field"></textarea>
+                                        <textarea name="message" id="c_detail" placeholder="Message" class="textarea-field"></textarea>
+                                        <input type="hidden" id="c_cmtId" value="@Model.BlogId">
                                     </div>
                                     <div class="button-wrap mt-8">
-                                        <button type="submit" value="submit" class="btn btn-custom-size lg-size btn-secondary btn-primary-hover btn-lg rounded-0" name="submit">Submit</button>
+                                        <button type="button" id="c_submit" value="submit" class="btn btn-custom-size lg-size btn-secondary btn-primary-hover btn-lg rounded-0" name="submit">Submit</button>
                                     </div>
                                 </form>
                             </div>
@@ -144,3 +145,42 @@
     </div>
 </main>
 <!-- Main Content Area End Here -->
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#c_submit").click(function () {
+                var _cmdId = $("#c_cmtId").val();
+                var _name = $("#c_name").val();
+                var _phone = $("#c_phone").val();
+                var _email = $("#c_email").val();
+                var _message = $("#c_detail").val();
+
+                $.ajax({
+                    url: "/Blog/AddnewComment",
+                    type: "POST",
+                    data: {
+                        BlogId: _cmdId,
+                        Name: _name,
+                        Phone: _phone,
+                        Email: _email,
+                        Detail: _message
+                    },
+                    success: function (result) {
+                        if (result.status) {
+                            $("#c_name").val("");
+                            $("#c_phone").val("");
+                            $("#c_email").val("");
+                            $("#c_detail").val("");
+                            toastr.success('Bình luận thành công');
+                        } else {
+                            toastr.error('Bình luận không thành công');
+                        }
+                    },
+                    error: function () {
+                        toastr.error('Đã xảy ra lỗi, vui lòng thử lại.');
+                    }
+                });
+            });
+        });
+    </script>
+}

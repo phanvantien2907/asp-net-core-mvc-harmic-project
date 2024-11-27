@@ -19,16 +19,17 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        public  IActionResult Create(string name, string phone, string email, string message)
+        public async Task <IActionResult> Create(string name, string phone, string email, string message)
         {
             try
             {
                 TbContact contact = new TbContact();
+                contact.Name = name;
                 contact.Phone = phone;
                 contact.Email = email;
                 contact.Message = message;
-                _context.Add(contact);
-                _context.SaveChangesAsync();
+               await _context.AddAsync(contact);
+               await _context.SaveChangesAsync();
                 return Json(new { status = true });
             }
             catch

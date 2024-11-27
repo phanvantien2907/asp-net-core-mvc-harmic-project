@@ -13,7 +13,7 @@
         <div class="blog-content">
             <div class="blog-meta text-dim-gray pb-3">
                 <ul>
-                    <li class="date"><i class="fa fa-calendar-o me-2"></i>@item.CreatedDate</li>
+                    <li class="date"><i class="fa fa-calendar-o me-2"></i>@item.CreatedDate?.ToString("dd/MM/yyyy")</li>
                     <li>
                         <span class="comments me-3 ms-3">
                             <a href="javascript:void(0)">@item.SeoTitle</a>
